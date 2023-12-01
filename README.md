@@ -22,18 +22,15 @@ Included next packages:
 Add next line to feeds.conf.default in OpenWrt SDK/Buildroot
 
 ```
-src-git modemfeed https://github.com/koshev-msk/modemfeed.git
+src-git CHUNGPT https://github.com/Dung072/DEV.git
 ```
 
 Update feeds and compile singe package
 
 ```
 ./scripts/feeds update -a; ./scripts/feeds install -a
-make -j$((`nproc` + 1)) package/feeds/modemfeed/<package_name>/compile
+make -j$((`nproc` + 1)) package/feeds/CHUNGPT/<package_name>/compile
 ```
 
 or `make menuconfig` menu to include package(s) firmware in Buildroot
 
-# Precompiled packages
-
-http://openwrt.132lan.ru/packages/21.02/packages/
